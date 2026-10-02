@@ -1,0 +1,24 @@
+GITHUB-ONLY APK BUILD
+=====================
+
+NO ANDROID STUDIO REQUIRED
+
+1. Create a new GitHub repository.
+2. Upload all files in this folder, including:
+   .github/workflows/build-apk.yml
+3. Open GitHub -> Actions.
+4. Select: Build ABS Smart Parking Display APK
+5. Click: Run workflow
+6. Wait for the green check.
+7. Open the completed workflow run.
+8. Download artifact: ABS-Smart-Parking-Display-APK
+9. Inside the downloaded ZIP: app-debug.apk
+10. Install app-debug.apk on the Android display.
+
+DEFAULT WEB PORT: 5000
+EXAMPLE SERVER: 192.168.1.7
+EXAMPLE ENTRY: http://192.168.1.7:5000/display?gate=1&side=entry
+EXAMPLE EXIT : http://192.168.1.7:5000/display?gate=1&side=exit
+
+The Android device and Guard Room PC must be on the same LAN/Wi-Fi.
+The Flask web server must be reachable on the PC LAN IP.
